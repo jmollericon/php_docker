@@ -13,12 +13,10 @@ services:
       - 8000:80
   db:
     container_name: db
-    image: mysql
+    image: mysql:5.7.37
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: super_root
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: db_codeigniter
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
     ports:
       - "9906:3306"
