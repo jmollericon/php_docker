@@ -82,6 +82,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
+		<?php
+			$host = 'db';
+			// Database use name
+			$user = 'root';
+			//database user password
+			$pass = 'root';
+			// check the MySQL connection status
+			$conn = new mysqli($host, $user, $pass);
+			if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+			} else {
+				echo "<h2>Connected to MySQL server successfully!</h2>";
+			}
+		?>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 		<p>If you would like to edit this page you'll find it located at:</p>
@@ -91,6 +105,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<code>application/controllers/Welcome.php</code>
 
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="userguide3/">User Guide</a>.</p>
+
+		<pre><?php print_r($users); ?></pre>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
