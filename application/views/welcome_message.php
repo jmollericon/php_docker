@@ -96,6 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				echo "<h2>Connected to MySQL server successfully!</h2>";
 			}
 		?>
+		<a target="_blank" href="index.php/welcome/pdf"><h3>Report with Dompdf</h3></a>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 		<p>If you would like to edit this page you'll find it located at:</p>
