@@ -20,6 +20,12 @@
 	"scripts": {
 		"up": "docker-compose up -d",
 		"down": "docker-compose down",
+		"build": "docker-compose build",
+		"build-up": "docker-compose up --detach --build",
+		"start": "docker-compose start",
+		"stop": "docker-compose stop",
+		"bash-server": "docker exec -it php-apache /bin/bash",
+		"bash-db": "docker exec -it db /bin/bash",
 		"test:coverage": [
 			"@putenv XDEBUG_MODE=coverage",
 			"phpunit --color=always --coverage-text --configuration tests/travis/sqlite.phpunit.xml"
