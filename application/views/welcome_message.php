@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Welcome to CodeIgniter! - <a href="/phpinfo.php" target="_blank">PHP info</a></h1>
 
 	<div id="body">
 		<?php
@@ -97,6 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 		?>
 		<a target="_blank" href="index.php/welcome/pdf"><h3>Report with Dompdf</h3></a>
+		<hr>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 		<p>If you would like to edit this page you'll find it located at:</p>
