@@ -17,7 +17,7 @@ Settings for frameworks like:
 
 ### Examples
 #### [CodeIgniter](https://github.com/jmollericon/php_docker/tree/codeigniter)
-#### [CodeIgniter](https://github.com/jmollericon/php_docker/tree/laravel)
+#### [Laravel](https://github.com/jmollericon/php_docker/tree/laravel)
 
 ## Authors
 
